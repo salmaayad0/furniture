@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Jost:wght@200&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Robeto Furniture</title>
+  </head>
+  <body>
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg p-4 position-fixed fixed-top bg-nav-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="sources/logo.svg" alt="logo" class="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto m-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-person"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-handbag"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"
+                  />
+                </svg>
+                <sup><span class="badge badge-specific">0</span></sup>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider section -->
+    <section class="slider-section">
+      <div class="d-flex justify-content-between px-2 w-100 h-100 slider-parent-custom">
+        <div class="d-flex justify-content-center flex-column px-3 slider-text-custom">
+          <span>Front View Of Sofa</span>
+          <h2>LIVING ROOM <br>COLLECTIONS</h2>
+          <button>SHOP NOW</button>
+        </div>
+        <div class="slider-child-custom">
+          <div class="slider-img-custom">
+            <img
+        src="sources/m10_slider_2_1.jpg"
+        class="d-block img1"
+        alt="furniture"
+      />
+      <img
+        src="sources/m10_slider_2_2.png"
+        class="d-block img2"
+        alt="furniture"
+      />
+          </div>
+        </div>
+      </div>
+
+      
+        <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active d-flex justify-content-between px-2 w-100 h-100 slider-parent-custom">
+              <div class="d-flex justify-content-center flex-column px-3 slider-text-custom">
+                <span>Front View Of Sofa</span>
+                <h2>LIVING ROOM <br>COLLECTIONS</h2>
+                <button>SHOP NOW</button>
+              </div>
+              <div class="slider-child-custom">
+                <div class="slider-img-custom">
+                  <img
+              src="sources/m10_slider_2_1.jpg"
+              class="d-block img1"
+              alt="furniture"
+            />
+            <img
+              src="sources/m10_slider_2_2.png"
+              class="d-block img2"
+              alt="furniture"
+            />
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item d-flex justify-content-between px-2 w-100 h-100 slider-parent-custom">
+              <div class="d-flex justify-content-center flex-column px-3 slider-text-custom">
+                <span>Front View Of Sofa</span>
+                <h2>LIVING ROOM <br>COLLECTIONS</h2>
+                <button>SHOP NOW</button>
+              </div>
+              <div class="slider-child-custom">
+                <div class="slider-img-custom">
+                  <img
+              src="sources/m10_slider_2_1.jpg"
+              class="d-block img1"
+              alt="furniture"
+            />
+            <img
+              src="sources/m10_slider_2_2.png"
+              class="d-block img2"
+              alt="furniture"
+            />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> -->
+    </section>
+
+    <!-- shop now section -->
+    <section class="container-fluid my-5">
+      <div class="row d-flex justify-content-between mx-2">
+        <div class="col-12 col-md-6 col-lg-4 img-custom m-3">
+          <img
+            src="sources/m10_banner_01.jpg"
+            alt=""
+            class="w-100 h-100 object-fit-cover"
+          />
+          <div class="text-img-custom text-center">
+            <h2>Interior design</h2>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 img-custom m-3">
+          <img
+            src="sources/m10_banner_02.jpg"
+            alt=""
+            class="w-100 h-100 object-fit-cover"
+          />
+          <div class="text-img-custom text-center">
+            <h2>Apartment comfortable</h2>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 img-custom m-3">
+          <img
+            src="sources/m10_banner_03.jpg"
+            alt=""
+            class="w-100 h-100 object-fit-cover"
+          />
+          <div class="text-img-custom text-center">
+            <h2>Children room</h2>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- prouduct section -->
+    <section class="container-fluid my-5">
+      <div class="text-center custom-text">
+        <p>NEW PRODUCT</p>
+        <h2>NEW ARRIVAL</h2>
+      </div>
+
+      <!-- filter buttons -->
+      <nav class="text-center">
+        <button class="filter filter-active">Deal Zone</button>
+        <button class="filter">SOAFS & RECLINERS</button>
+        <button class="filter">LIVING</button>
+        <button class="filter">BEDROOM & MATTRESSES</button>
+      </nav>
+
+      <!-- cards -->
+      <div class="contanier m-5">
+        <div class="row justify-content-between">
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-5 card-custom"
+          >
+            <div class="card-custom-img">
+              <img src="sources/m9_p_01_1.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="custom-card-body d-flex">
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bag-plus"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                  />
+                </svg>
+                <span>ADD TO CART</span>
+              </a>
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-suit-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                  />
+                </svg>
+                <span>ADD TO WISHLIST</span>
+              </a>
+            </div>
+            <div class="text-center custom-card-text mb-3">
+              <h5 class="">Rochelle Fabric Lounge Chair</h5>
+              <p class="">$250.00</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-5 card-custom"
+          >
+            <div class="card-custom-img">
+              <img src="sources/m9_p_02_1.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="custom-card-body d-flex">
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bag-plus"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                  />
+                </svg>
+                <span>ADD TO CART</span>
+              </a>
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-suit-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                  />
+                </svg>
+                <span>ADD TO WISHLIST</span>
+              </a>
+            </div>
+            <div class="text-center custom-card-text mb-3">
+              <h5 class="">Rochelle Fabric Lounge Chair</h5>
+              <p class="">$250.00</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-5 card-custom"
+          >
+            <div class="card-custom-img">
+              <img src="sources/m9_p_03_1.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="custom-card-body d-flex">
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bag-plus"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                  />
+                </svg>
+                <span>ADD TO CART</span>
+              </a>
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-suit-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                  />
+                </svg>
+                <span>ADD TO WISHLIST</span>
+              </a>
+            </div>
+            <div class="text-center custom-card-text mb-3">
+              <h5 class="">Rochelle Fabric Lounge Chair</h5>
+              <p class="">$250.00</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-5 card-custom"
+          >
+            <div class="card-custom-img">
+              <img src="sources/m9_p_04_1.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="custom-card-body d-flex">
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bag-plus"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                  />
+                </svg>
+                <span>ADD TO CART</span>
+              </a>
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-suit-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                  />
+                </svg>
+                <span>ADD TO WISHLIST</span>
+              </a>
+            </div>
+            <div class="text-center custom-card-text mb-3">
+              <h5 class="">Rochelle Fabric Lounge Chair</h5>
+              <p class="">$250.00</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-5 card-custom"
+          >
+            <div class="card-custom-img">
+              <img src="sources/m9_p_01_1.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="custom-card-body d-flex">
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bag-plus"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                  />
+                </svg>
+                <span>ADD TO CART</span>
+              </a>
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-suit-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                  />
+                </svg>
+                <span>ADD TO WISHLIST</span>
+              </a>
+            </div>
+            <div class="text-center custom-card-text mb-3">
+              <h5 class="">Rochelle Fabric Lounge Chair</h5>
+              <p class="">$250.00</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-5 card-custom"
+          >
+            <div class="card-custom-img">
+              <img src="sources/m9_p_02_1.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="custom-card-body d-flex">
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bag-plus"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                  />
+                </svg>
+                <span>ADD TO CART</span>
+              </a>
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-suit-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                  />
+                </svg>
+                <span>ADD TO WISHLIST</span>
+              </a>
+            </div>
+            <div class="text-center custom-card-text mb-3">
+              <h5 class="">Rochelle Fabric Lounge Chair</h5>
+              <p class="">$250.00</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-5 card-custom"
+          >
+            <div class="card-custom-img">
+              <img src="sources/m9_p_03_1.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="custom-card-body d-flex">
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bag-plus"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                  />
+                </svg>
+                <span>ADD TO CART</span>
+              </a>
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-suit-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                  />
+                </svg>
+                <span>ADD TO WISHLIST</span>
+              </a>
+            </div>
+            <div class="text-center custom-card-text mb-3">
+              <h5 class="">Rochelle Fabric Lounge Chair</h5>
+              <p class="">$250.00</p>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-5 card-custom"
+          >
+            <div class="card-custom-img">
+              <img src="sources/m9_p_04_1.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="custom-card-body d-flex">
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bag-plus"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                  />
+                </svg>
+                <span>ADD TO CART</span>
+              </a>
+              <a href="#" class="text-center d-block d-flex justify-content-center align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-suit-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                  />
+                </svg>
+                <span>ADD TO WISHLIST</span>
+              </a>
+            </div>
+            <div class="text-center custom-card-text mb-3">
+              <h5 class="">Rochelle Fabric Lounge Chair</h5>
+              <p class="">$250.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- video section -->
+    <section class="my-3">
+      <video class="video" controls>
+        <source src="" type="video/mp4" />
+      </video>
+    </section>
+
+    <!-- shop now second section -->
+    <section class="container-fluid my-3">
+      <div class="row d-flex">
+        <div class="col-12 col-md-6 w-50 shop-now">
+          <img
+            src="sources/m10_banner_05.jpg"
+            alt=""
+            class="w-100 h-100 object-fit-cover"
+          />
+          <div class="text-center shop-now-text">
+            <h5>Chic luxury authentic Dining room</h5>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 w-50 shop-now">
+          <img
+            src="sources/m10_banner_06.jpg"
+            alt=""
+            class="w-100 h-100 object-fit-cover"
+          />
+          <div class="text-center shop-now-text">
+            <h5>Mid century modern<br />Living room</h5>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cards pick ups -->
+    <section class="container-fluid my-5">
+      <!-- heading text -->
+      <div class="text-center custom-text">
+        <p>NEW PRODUCT</p>
+        <h2>NEW ARRIVAL</h2>
+      </div>
+
+      <!-- products -->
+      <div class="row justify-content-between mx-3">
+        <div
+        class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-5 card-custom"
+      >
+        <div class="card-custom-img">
+          <img src="sources/m9_p_01_1.jpg" class="card-img-top" alt="..." />
+        </div>
+        <div class="custom-card-body d-flex">
+          <a href="#" class="text-center d-block d-flex justify-content-center align-items-center"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-bag-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+              />
+            </svg>
+            <span>ADD TO CART</span>
+          </a>
+          <a href="#" class="text-center d-block d-flex justify-content-center align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-suit-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+              />
+            </svg>
+            <span>ADD TO WISHLIST</span>
+          </a>
+        </div>
+        <div class="text-center custom-card-text mb-3">
+          <h5 class="">Rochelle Fabric Lounge Chair</h5>
+          <p class="">$250.00</p>
+        </div>
+      </div>
+
+      <div
+        class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-5 card-custom"
+      >
+        <div class="card-custom-img">
+          <img src="sources/m9_p_02_1.jpg" class="card-img-top" alt="..." />
+        </div>
+        <div class="custom-card-body d-flex">
+          <a href="#" class="text-center d-block d-flex justify-content-center align-items-center"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-bag-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+              />
+            </svg>
+            <span>ADD TO CART</span>
+          </a>
+          <a href="#" class="text-center d-block d-flex justify-content-center align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-suit-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+              />
+            </svg>
+            <span>ADD TO WISHLIST</span>
+          </a>
+        </div>
+        <div class="text-center custom-card-text mb-3">
+          <h5 class="">Rochelle Fabric Lounge Chair</h5>
+          <p class="">$250.00</p>
+        </div>
+      </div>
+
+      <div
+        class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-5 card-custom"
+      >
+        <div class="card-custom-img">
+          <img src="sources/m9_p_03_1.jpg" class="card-img-top" alt="..." />
+        </div>
+        <div class="custom-card-body d-flex">
+          <a href="#" class="text-center d-block d-flex justify-content-center align-items-center"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-bag-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+              />
+            </svg>
+            <span>ADD TO CART</span>
+          </a>
+          <a href="#" class="text-center d-block d-flex justify-content-center align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-suit-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+              />
+            </svg>
+            <span>ADD TO WISHLIST</span>
+          </a>
+        </div>
+        <div class="text-center custom-card-text mb-3">
+          <h5 class="">Rochelle Fabric Lounge Chair</h5>
+          <p class="">$250.00</p>
+        </div>
+      </div>
+
+      <div
+        class="col-12 col-md-6 col-lg-4 d-flex flex-column mb-5 card-custom"
+      >
+        <div class="card-custom-img">
+          <img src="sources/m9_p_04_1.jpg" class="card-img-top" alt="..." />
+        </div>
+        <div class="custom-card-body d-flex">
+          <a href="#" class="text-center d-block d-flex justify-content-center align-items-center"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-bag-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+              />
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+              />
+            </svg>
+            <span>ADD TO CART</span>
+          </a>
+          <a href="#" class="text-center d-block d-flex justify-content-center align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-suit-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+              />
+            </svg>
+            <span>ADD TO WISHLIST</span>
+          </a>
+        </div>
+        <div class="text-center custom-card-text mb-3">
+          <h5 class="">Rochelle Fabric Lounge Chair</h5>
+          <p class="">$250.00</p>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="mt-3">
+      <div class="d-flex justify-content-center align-items-center bg-custom">
+        <div class="follow-us">
+          <span>Follow Us</span>
+          <h2>ROBETO instagram</h2>
+          <span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores,
+            ducimus?
+          </span>
+        </div>
+        <div>
+          <p>
+            Error validating access token: Session has expired on Saturday,
+            07-Jan-23 05:14:44 PST. The current time is Friday, 28-Apr-23
+            21:08:26 PDT.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,343 @@
+:root{
+    --font:'Castoro Titling', cursive;
+    --bgSlider: #b9a396;
+    --smallFont: 'Jost', sans-serif;
+    --darkerColor: #865032;
+    --white: #ffffff;
+    --buttonColor: #6f4a32;
+    
+}
+
+*{
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navBar */
+.bg-nav-custom{
+background-color: var(--white);
+}
+
+.badge-specific{
+    background-color: var(--darkerColor);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* slider section */
+.slider-section{
+    height: 100vh;
+    width: 98.9vw;
+    background-color: var(--bgSlider);
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.slider-text-custom{
+    color: var(--white);
+    position: relative;
+    animation: text-postion 2s linear 5s;
+}
+
+.slider-text-custom h2{
+    font-size: 4.5rem;
+}
+
+.slider-text-custom span{
+    font-size: 1.5rem;
+}
+
+.slider-text-custom button{
+    border: 1px solid var(--white);
+    background-color: var(--bgSlider);
+    color: var(--white);
+    width: 150px;
+    height: 50px;
+}
+
+.slider-child-custom{
+    position: relative;
+}
+
+.slider-child-custom::after{
+    content: '';
+    display: block;
+    width: 500px;
+    height: 450px;
+    border: 1px solid var(--white);
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    animation: border-postion 2s linear 0s;
+}
+
+.slider-child-custom .slider-img-custom .img1{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: 1;
+    animation: img1-postion 2.5s linear 2s;
+}
+
+.slider-child-custom .slider-img-custom .img2{
+    position: absolute;
+    bottom: 70px;
+    right: 300px;
+    z-index: 2;
+    animation: img2-postion 3s linear 3s;
+}
+
+/* animation */
+
+@keyframes border-postion {
+    from{
+        right: 300px;
+        opacity: 0;
+    }
+    
+    to{
+        right: 50px;
+        opacity: 1;
+    }
+}
+
+@keyframes img1-postion {
+    from{
+        right: 300px;
+        opacity: 0;
+    }
+
+    to{
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes img2-postion {
+    from{
+        right: 500px;
+        opacity: 0;
+    }
+
+    to{
+        right: 120px;
+        opacity: 1;
+    }
+}
+
+@keyframes text-postion {
+    from{
+        left: 0;
+    }
+
+    to{
+        left: 20px;
+    }
+}
+
+/* shop now section */
+.img-custom{
+   width: 380px;
+   height: 250px;
+   position: relative;
+}
+
+.img-custom::after{
+    content: "";
+    width: 94%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.13);
+    position: absolute;
+    top: 0;
+}
+
+.text-img-custom{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 90px;
+    z-index: 3;
+}
+
+.text-img-custom h2{
+    color: var(--white);
+}
+
+.text-img-custom button{
+    height: 50px;
+    width: 125px;
+    padding: 3px;
+    background-color: var(--white);
+    color: black;
+    border: none;
+}
+
+.img-custom:hover button{
+    background-color: var(--bgSlider);
+    color: var(--white);
+}
+
+/* product section */
+.custom-text p{
+    font-family: var(--smallFont);
+    font-weight: bold;
+    color:var(--darkerColor);
+    font-size: 1.25rem;
+}
+
+.custom-text h2{
+    font-family: var(--font);
+    font-size: 3rem;
+}
+
+.filter{
+    background-color: var(--white);
+    color:  #77777b;
+    border: 2px solid #e2e1e4;
+    padding: 11px 20px;
+    margin: 9px;
+    font-weight: bold;
+}
+
+.filter-active{
+    border: 2px solid var(--buttonColor);
+    color: var(--buttonColor);
+}
+
+.filter:hover{
+    border: 2px solid var(--buttonColor);
+    color:  var(--buttonColor);
+}
+
+/* cards */
+.card-custom{
+    width: 300px;
+    min-height: 300px;
+    padding: 0;
+    position: relative;
+}
+
+.card-custom::after{
+    content: 'NEW!';
+    display: block;
+    width: 50px;
+    height: 25px;
+    padding: 3px;
+    color: #ffffff;
+    background-color: var(--buttonColor);
+    font-family: var(--smallFont);
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.card-custom-img{
+    border: 1px solid #e2e1e4;
+}
+
+.card-custom .card-custom-img:hover{
+    transform: scaleX(1.1);
+}
+
+.custom-card-body{
+    padding: 0;
+    margin: 0px 0px 6px 0px;
+    font-family: var(--smallFont);
+    
+}
+
+.custom-card-body a{
+    text-decoration: none;
+    color: black;
+    outline: none;
+    font-size: 0.75rem;
+    border: 1px solid #e2e1e4;
+    width: 200px;
+    height: 40px;
+    padding: 3px 6.5px;
+    margin-bottom: 7px;
+}
+
+.custom-card-body a:hover{
+    color: var(--buttonColor);
+}
+
+.custom-card-text h5, 
+.custom-card-text p{
+    font-family: var(--smallFont);
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.custom-card-text h5:hover{
+    color: var(--buttonColor);
+}
+
+/* video section */
+.video{
+    width: 98.9vw;
+    position: relative;
+}
+
+.video::after{
+    content: 'LIVING ROOM INTERIOR WALL MOCUP';
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #77777b;
+    background-color: #ffffff;
+    font-family: var(--smallFont);
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+}
+
+/* show now section two */
+.shop-now{
+    position: relative;
+}
+
+.shop-now-text h5{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.shop-now-text button{
+    position: absolute;
+    bottom: 70px;
+    left: 250px;
+    border: none;
+    width: 25%;
+    height: 10%;
+}
+
+.shop-now:hover button{
+    background-color: black;
+    color: var(--white);
+}
+
+
+/* footer */
+.bg-custom{
+    height: 50vh;
+    background-color: #b99881;
+    padding: 15px 20px;
+}
+
+.follow-us{
+    color: var(--white);
+}
